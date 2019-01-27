@@ -13,7 +13,10 @@ export class AppComponent {
   }
 
   onRemoveServer(id: number) {
+    if ( id === 0 && this.servers.length < 2) {
+      this.servers = [];
+    } else {
     const position = id + 1;
-    this.servers.splice(position, 1);
+    this.servers.splice(position, 1);}
   }
 }
