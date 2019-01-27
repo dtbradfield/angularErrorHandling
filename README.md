@@ -1,3 +1,18 @@
+I took the files for this app from the tutorial I am following
+
+The purpose of this project was to debug using Augury.
+
+I was able to fix everything on my own:
+
+Initial problems: Add server button did not work. Also, the method that removed the last item of the array of newly added servers
+was unable to remove the final item.
+
+## Fixes: 
+
+Fixed the server button. 'servers' was not forced to be an empty array, so I did it manually: servers = [];
+
+Fixed the remove server function with an if else in the app component file. Easy peasy.
+
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
